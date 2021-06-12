@@ -1,0 +1,34 @@
+.container {
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.container:hover > .close {
+    display: flex;
+}
+
+.close {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    z-index: 4;
+    padding: 0;
+}
+
+.close img {
+    width: 10px;
+    height: 10px;
+}
